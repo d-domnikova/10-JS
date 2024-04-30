@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Image</title>
+</head>
+<body>
+    <form>
+        <label for="list">Оберіть зображення: </label>
+        <select onchange="changeImg(this.value)" id="list">
+            <option value=""></option>
+            <option value="arturia">Arturia</option>
+            <option value="delphine">Delphine</option>   
+            <option value="kaltsit">Kal'tsit</option>   
+            <option value="texas">Texas</option>          
+        </select>
+    </form>
+    <img id="img">
+<script src="index.js"></script>
+</body>
+</html>

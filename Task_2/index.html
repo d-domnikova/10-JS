@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Drawing</title>
+</head>
+<body>
+    <h2>Побудова еліпса</h2>
+        <label for="y_Axis">Вертикальна вісь: </label>
+        <input type="number" id="y_Axis">
+    <br><br>
+        <label for="x_Axis">Горизонтальна вісь: </label>
+        <input type="number" id="x_Axis">
+    <br><br>
+        <button id="mosaic" onclick="draw(this.id)">За принципом мозаїки</button>
+    <br><br>
+        <button id="svg" onclick="draw(this.id)">За допомогою SVG</button>
+    <br><br>
+        <button id="canvas" onclick="draw(this.id)">За допомогою Canvas</button>
+    <br><br>
+    <div id="box" style="height: 400px; width: 500px; border: 1px solid rgb(155, 155, 155); position: relative"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
